@@ -1,0 +1,81 @@
+.btn{
+    display:flex;
+}
+.detail{
+    display:flex;
+}
+.check{
+    display:flex;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+.name input{
+    margin-bottom:30px;
+    padding:15px 70px;
+}
+.email1 input{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-bottom:35px;   
+    }
+    
+    .pass1 input{
+        padding-top:15px;
+    padding-bottom:15px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-bottom:35px;
+
+    }
+    .confirm input{
+        padding-top:15px;
+    padding-bottom:15px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-bottom:35px;
+    }
+    .imgl img{
+        position:relative;
+        bottom:30px;
+
+    }
+    .Signup{
+        margin-left:300px;
+    }
+    .Lo{
+        position:relative;
+    top:1px;
+    }
+    .check p{
+        margin-right:5px;
+    }
+    .food {
+        margin-left:400px;
+        color:#563f46;
+    }
+    .pass1 i{
+        z-index:1;
+        position:relative;
+        left:20px;
+    }
+    .email1 i{
+        z-index:1;
+        position:relative;
+        left:20px;
+
+    }
+    .name i{
+        z-index:1;
+        position:relative;
+        left:20px;
+    }
+    .confirm i{
+        z-index:1;
+        position:relative;
+        left:20px;
+    }
+    .Wel{
+        margin-left:15px;
+    }

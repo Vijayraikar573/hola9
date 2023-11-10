@@ -1,0 +1,142 @@
+.login{
+    display:flex;
+}
+.W{
+    display:flex;
+    flex-direction:column;
+}
+.L1{
+    display:flex;
+}
+.email input{
+padding-top:15px;
+padding-bottom:15px;
+padding-left:130px;
+padding-right:130px;
+margin-bottom:35px;
+
+}
+
+.pass input{
+    padding-top:15px;
+padding-bottom:15px;
+padding-left:130px;
+padding-right:130px;
+margin-bottom:35px;
+}
+
+.btn button{
+    padding:15px 60px;
+    color:white;
+    font-weight:bold;
+    font-size:larger;
+    background-color:purple;
+    border-radius:30px;
+    margin-left:20px;
+    border:none;
+}
+.grey{
+    color:grey;
+    margin-bottom:55px;
+}
+.L2 p{
+    margin-right:5px;
+   
+}
+.L3{
+
+    position:relative;
+    top:1px;
+}
+.L1{
+    margin-left:270px;
+    margin-bottom:30px;
+}
+
+.email i{
+    z-index:1;
+    position:relative;
+    left:20px;
+}
+.pass i{
+    z-index:1;
+    position:relative;
+    left:20px;
+
+}
+.food1 {
+    margin-left:400px;
+    color:#563f46;
+}
+.Login{
+    margin-left:150px;
+}
+
+
+/* rotating */
+/* .container{
+    position: relative;
+    width:320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;;
+
+}
+
+.carousel{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    transform-style:preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+
+}
+
+.image{
+    position: absolute;
+    width:400px;
+    height: 200px;
+    top:20px;
+    left:10px;
+    right:10px;
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(12, 11, 11, 0.5) ;
+    display: flex;
+
+}
+span{
+    margin: auto;
+    font-size: 2rem;
+    color:white;
+}
+@keyframes rotate360{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.image:nth-child(1){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i1.jpeg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+.image:nth-child(2){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i2.jpeg");
+    transform: rotateY(60deg) translateZ(430px);
+}
+.image:nth-child(3){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i3.jpeg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+.image:nth-child(4){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i5.jpeg");
+    transform: rotateY(180deg) translateZ(430px);
+}
+.image:nth-child(5){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i6.jpeg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+.image:nth-child(6){
+    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i7.jpeg");
+    transform: rotateY(300deg) translateZ(430px);
+} */

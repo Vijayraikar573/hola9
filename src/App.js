@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes,Route} from "react-router-dom";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
+import Home from "./components/Home.jsx";
+import ProductCard from "./Redux/ProductCard";
+
+import WishlistPage from "./Redux/WishlistPage";
+import store from "./Redux/store"
 
 function App() {
+  const initialProducts=store.getState().wishlist.products;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Routes>
+        <Route path="/" element={<LogIn/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/productcard" element={<ProductCard products={initialProducts}/>}/>
+        <Route path="/wishlist" element={<WishlistPage/>}/>
+      </Routes>
     </div>
   );
 }
