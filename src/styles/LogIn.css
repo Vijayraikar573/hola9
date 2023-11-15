@@ -1,3 +1,7 @@
+body{
+    /* background-color: blueviolet; */
+    height: 100vh;
+}
 .login{
     display:flex;
 }
@@ -70,73 +74,44 @@ margin-bottom:35px;
 }
 .Login{
     margin-left:150px;
+    /* background-color: blue; */
 }
 
-
-/* rotating */
-/* .container{
-    position: relative;
-    width:320px;
-    margin: 100px auto 0 auto;
-    perspective: 1000px;;
-
-}
-
-.carousel{
-    position: absolute;
-    width:100%;
-    height: 100%;
-    transform-style:preserve-3d;
-    animation: rotate360 60s infinite forwards linear;
-
-}
-
-.image{
-    position: absolute;
-    width:400px;
-    height: 200px;
-    top:20px;
-    left:10px;
-    right:10px;
-    background-size:cover;
-    box-shadow:inset 0 0 0 2000px rgba(12, 11, 11, 0.5) ;
-    display: flex;
-
-}
-span{
+.imgo img{
+    max-width: 100%;
+    height:auto;
+    display: block;
     margin: auto;
-    font-size: 2rem;
-    color:white;
 }
-@keyframes rotate360{
-    from{
-        transform:rotateY(0deg);
+.name h1{
+    display: none;
+}
+@media(max-width:768px){
+    .login{
+        display: flex;
+        flex-direction: column;
     }
-    to{
-        transform: rotateY(-360deg);
+    .Login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        padding: 20%;
+        margin-left: 0px;
     }
+    .imgo img{
+      display: none;
+      
+    }
+    h3{
+        display: none;
+    }
+    .detail input,.detail button{
+
+            font-size:15px;
+    }
+    .detail button{
+        margin-left: 50px;
+    }
+   
 }
-.image:nth-child(1){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i1.jpeg");
-    transform: rotateY(0deg) translateZ(430px);
-}
-.image:nth-child(2){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i2.jpeg");
-    transform: rotateY(60deg) translateZ(430px);
-}
-.image:nth-child(3){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i3.jpeg");
-    transform: rotateY(120deg) translateZ(430px);
-}
-.image:nth-child(4){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i5.jpeg");
-    transform: rotateY(180deg) translateZ(430px);
-}
-.image:nth-child(5){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i6.jpeg");
-    transform: rotateY(240deg) translateZ(430px);
-}
-.image:nth-child(6){
-    background-image: url("C:\Users\Vijay\Desktop\Mern\frontend\public\images\i7.jpeg");
-    transform: rotateY(300deg) translateZ(430px);
-} */

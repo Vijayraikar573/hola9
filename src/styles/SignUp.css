@@ -8,6 +8,7 @@
     display:flex;
     margin-left:20px;
     margin-bottom:20px;
+    
 }
 .name input{
     margin-bottom:30px;
@@ -38,8 +39,7 @@
     }
     .imgl img{
         position:relative;
-        bottom:30px;
-
+        bottom:50px;
     }
     .Signup{
         margin-left:300px;
@@ -75,7 +75,50 @@
         z-index:1;
         position:relative;
         left:20px;
+    
+    }
+    .confirm1{
+        margin-right: 30px;
     }
     .Wel{
         margin-left:15px;
+    }
+    .imgl img{
+        max-width: 100%;
+        height:auto;
+        display: block;
+        margin: auto;
+    }
+    /* .info h2{
+       display: none;  
+    } */
+
+@media(max-width:768px){
+        .info{
+            display: flex;
+            flex-direction: column;
+        }
+        .Signup{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            padding: 20%;
+            margin-left: 0px;
+        }
+        .imgl img{
+          display: none;
+          
+        }
+        .food{
+            display: none;
+        }
+        .detail input,.detail button{
+    
+                font-size:15px;
+        }
+        .detail button{
+            margin-left: 50px;
+        }
+       
     }

@@ -48,13 +48,16 @@ const SignUp = () => {
    
   return (
     <div className="Signup">
-       <h1 className="food">SignUp</h1>
+       {/* <h2 className="food">SignUp</h2> */}
        {signupSuccess && <p style={{color:'green'}}>signup sucessfull! Redirecting to login page...</p>}
                 {error && <p style={{color:'red'}}>{error}</p>}
      
        <div className="info">
-
+       <div>
+        <h2>Signup</h2>
+     </div>
                 <div className="check">
+           
                     <p className="Al">Already user?</p>
                     <Link className="Lo" to='/'>Login</Link>
                     </div>

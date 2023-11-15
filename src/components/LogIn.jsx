@@ -30,7 +30,7 @@ const LogIn = () => {
   return (
     <div className="Login">
     
-        <h1 className="food1">Login</h1>
+        {/* <h3 className="foods">Login</h3> */}
         {error && <p style={{color:'red'}}>{error}</p>}
         <div className="login">
 
@@ -40,6 +40,9 @@ const LogIn = () => {
 
                 <div className="W">
 
+                    <div className="name">
+                        <h2>Login</h2>
+                    </div>
                 <div className="L1">
                     <div className="L2">
                     <p>New User?</p>

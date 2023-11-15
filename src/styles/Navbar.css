@@ -1,26 +1,88 @@
 .navbar{
     background-color: rgb(120, 157, 189);
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    color:white;
 }
-.nav{
+.menu-btn{
+    font-size: 24px;
+    cursor: pointer;
+    /* color: white; */
+    display: none;
+}
+.logo{
+    font-size: 20px;
+}
+.nav-links{
     display: flex;
     margin-right: 20px;
     align-items: center;
+    /* transform: translateY(-100);
+    transition: transform 0.3s ease-in-out; */
     
 }
 
-.navlist{
+/* .navlist{
     margin-right: 20px;
     text-decoration: none;
     
-}
-.nav button{
+} */
+.nav-links a{
     border-radius: 10px;
     padding:15px;
     margin-right: 10px;
     background-color: aqua;
-    color: black;
+    color:black;
     font-weight: 900;
     text-align: center;
 }
+
+.nav-links.open{
+    display:flex;
+}
+.nav-links.closed{
+    display: none;
+    
+}
+@media only screen and (max-width:768px) {
+ .menu-btn{
+    display: block;
+}
+.hola img{
+
+    margin-top: 100px;
+}
+.nav-links{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: auto;
+    background-color: rgb(232, 240, 243);
+    box-sizing: border-box;
+    /* transform: translateX(-100%); */
+    /* transition: transform 0.3s ease-in-out; */
+}   
+.nav-links a{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    color:white;
+    margin-bottom: 10px;
+
+
+}
+.nav-links.open{
+    display: flex;
+}
+.nav-links.closed{
+    display: none;
+    /* display: flex; */
+}
+}
+

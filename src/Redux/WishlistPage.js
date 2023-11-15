@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {useDispatch,useSelector} from 'react-redux';
 import {removeFromWishlist} from './wishlistSlice';
 import "../styles/ProductCard.css";
@@ -9,7 +8,6 @@ const WishlistPage=()=>{
     const wishlistProducts=useSelector((state)=>state.wishlist.products);
 
     const handleRemoveFromWishlist=(productId)=>{
-        console.log('remove',productId)
         dispatch(removeFromWishlist(productId));
     };
 
@@ -26,7 +24,7 @@ const WishlistPage=()=>{
                         <h3>Name : {product.name}</h3>
                         <h3>Price : {product.price}</h3>
                         <h3>Rating : {product.rating}</h3>
-                        {/* <button onClick={()=>handleRemoveFromWishlist(product.id)}>Remove</button> */}
+                        <button onClick={()=>handleRemoveFromWishlist(product.id)}>Remove</button>
                     </div>
                     </div>
                 ))}
